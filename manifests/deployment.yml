@@ -1,0 +1,16 @@
+apiVersion : apps/v1beta1
+kind: Deployment
+metadata:
+  name: cncfdemonewapp 
+spec:
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: cncfdemonewapp 
+    spec:
+      containers:
+        - name: cncfdemonewapp 
+          image: builddemo.azurecr.io/cncfdemonewapp 
+          ports:
+          - containerPort: 3000
