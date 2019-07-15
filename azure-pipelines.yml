@@ -51,7 +51,7 @@ stages:
     displayName: Deploy
     pool:
       vmImage: $(vmImageName)
-    environment: 'azooinmyluggageWebApp.kasisto'
+    environment: 'KasistoWebApp-Dev.kasisto'
     strategy:
       runOnce:
         deploy:
